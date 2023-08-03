@@ -1,0 +1,50 @@
+@import "../../../scss/foundation/variables.scss";
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    background: $light-grey;
+    justify-content: space-between;
+    width:100%;
+    padding: 9px 135px;
+}
+
+
+.left__content {
+    display: flex;
+    gap: 40px;
+}
+
+.brands {
+    display: flex;
+    gap: 24px;
+}
+
+
+.welcome__text {
+    color: $grey;
+    font-family: $poppins;
+    font-weight: $regular;
+    line-height: $lh-small;
+    font-size: $fs-small;
+}
+
+.right__content {
+    display: flex;
+    gap: 40px;
+} 
+
+.item {
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+}
+
+.text {
+    font-family: $poppins;
+    font-weight: $regular;
+    color: $grey;
+    font-size: $fs-small;
+}
+

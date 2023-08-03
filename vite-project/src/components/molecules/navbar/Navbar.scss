@@ -1,0 +1,23 @@
+@import '../../../scss/foundation/variables';
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 137px;
+    background: $white;
+
+}
+
+
+.nav__elements {
+    display: flex;
+    gap: 48px;
+    color: $green;
+    font-weight: $medium;
+}
+
+.icons {
+    display: flex;
+    gap: 24px;
+}

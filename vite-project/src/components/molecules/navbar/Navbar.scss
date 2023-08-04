@@ -9,15 +9,16 @@
 
 }
 
-
 .nav__elements {
     display: flex;
     gap: 48px;
-    color: $green;
+    color: $grey;
     font-weight: $medium;
+    font-family: $poppins;
 }
 
 .icons {
     display: flex;
     gap: 24px;
+    align-items: center;
 }

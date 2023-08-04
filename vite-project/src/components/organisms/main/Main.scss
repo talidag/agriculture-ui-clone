@@ -1,0 +1,39 @@
+@import '../../../scss/foundation/_variables';
+
+.main {
+    height: 84vh;
+    background: url('../../../assets/main.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:$white;
+   
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap:48px;
+        padding: 164px 136px;
+        width: 758px; // padding 136 * 2 + 486px din Figma
+    }
+
+    &__welcome {
+        font-family: $poppins;
+        font-weight: $semibold;
+        line-height: $lh-medium;
+        letter-spacing: 0.08rem; // in Figma 8%
+    }
+
+    &__h > h1 {
+        font-family: $dosis;
+        font-weight: $semibold;
+        line-height: $lh-gigant;
+        font-size: 86px;
+    }
+
+    &__p {
+        font-family: $poppins;
+        font-weight: $medium;
+        line-height: $lh-big;
+    }
+}

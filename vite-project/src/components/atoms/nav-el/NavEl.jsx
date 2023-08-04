@@ -1,11 +1,7 @@
 import "./NavEl.scss";
 
 const NavEl = ({ element }) => {
-  return (
-    <div className="nav__element">
-      <p className="nav__element__text">{element}</p>
-    </div>
-  );
+  return <p className="nav__element">{element}</p>;
 };
 
 export default NavEl;

@@ -1,0 +1,37 @@
+@import '../../../scss/foundation/_variables';
+
+.btn {
+    padding: 16px 28px;
+    background-color: $orange;
+    color:$white;
+    border:none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap:14px;
+    cursor: pointer;
+
+    &--complex {
+        padding: 8.5px 16.5px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    &__other {
+        font-family: $poppins;
+        font-weight: $medium;
+        font-size: $fs-small;
+        // line-height: $lh-medium;
+    }
+
+    &__text {
+        font-family: $poppins;
+        font-weight: $semibold;
+        line-height: $lh-medium;
+        font-size: 16px;
+    }
+}

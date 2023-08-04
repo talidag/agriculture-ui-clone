@@ -1,10 +1,10 @@
 import "./Button.scss";
 import phone from "../../../assets/phone.svg";
 
-const Button = ({ text, number, icon }) => {
+const Button = ({ text, other, icon }) => {
   return (
     <div className="btn__wrapper">
-      <button className="btn">
+      <button className={`btn ${other && `btn--complex`}`}>
         {icon && (
           <img
             src={icon === "phone" && phone}
@@ -12,8 +12,10 @@ const Button = ({ text, number, icon }) => {
             className="btn__img"
           />
         )}
-        {text}
-        {number}
+        <div className="btn__info">
+          <p className="btn__other">{other}</p>
+          <p className="btn__text">{text}</p>
+        </div>
       </button>
     </div>
   );

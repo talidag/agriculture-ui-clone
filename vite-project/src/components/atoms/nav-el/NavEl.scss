@@ -1,0 +1,24 @@
+@import '../../../scss/foundation/variables';
+
+
+
+.nav__element:hover {
+    color:$green;
+    position: relative;
+    cursor: pointer;
+
+    // No idea what's going on below, but it's working
+    // Would be nice to make the line the size of the text (ex - Projects)
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0rem;
+        right: 0rem;
+        height: 0.75rem;
+        z-index: 1; // -1 not working
+        background-image: url("../../../assets/underline.svg");
+        background-repeat: no-repeat;
+    }
+}   

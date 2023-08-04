@@ -20,12 +20,12 @@ const Navbar = () => {
       </div>
       <div className="icons">
         <div className="icon">
-          <img className="icon__image" src={cart} alt="shopping cart icon" />
-        </div>
-        <div className="icons">
           <img className="icon__image" src={search} alt="search icon" />
         </div>
-        <Button text={"Call Anytime"} number={"012345678910"} icon={"phone"} />
+        <div className="icon">
+          <img className="icon__image" src={cart} alt="shopping cart icon" />
+        </div>
+        <Button other={"Call Anytime"} text={"012345678910"} icon={"phone"} />
       </div>
     </nav>
   );

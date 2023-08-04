@@ -1,13 +1,10 @@
 @import '../../../scss/foundation/variables';
 
-
-
 .nav__element:hover {
     color:$green;
     position: relative;
     cursor: pointer;
 
-    // No idea what's going on below, but it's working
     // Would be nice to make the line the size of the text (ex - Projects)
 
     &::after {

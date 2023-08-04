@@ -4,12 +4,14 @@ import logo from "../../../assets/logo.svg";
 import cart from "../../../assets/cart.svg";
 import search from "../../../assets/search.svg";
 import Button from "../../atoms/button/Button";
+import cut from "../../../assets/cut.svg";
 
 const Navbar = () => {
   const menuElements = ["Home", "About", "Pages", "Projects", "News"];
 
   return (
     <nav className="nav">
+      <img src={cut} alt="" className="cut__img" />
       <div className="nav__logo">
         <img src={logo} alt="agrikon logo" className="nav__image" />
       </div>

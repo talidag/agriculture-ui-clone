@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     gap:14px;
-    cursor: pointer;
+    font-family: $poppins;
 
     &--complex {
         padding: 8.5px 16.5px;
@@ -22,16 +22,16 @@
     }
 
     &__other {
-        font-family: $poppins;
         font-weight: $medium;
         font-size: $fs-small;
-        // line-height: $lh-medium;
+        // line height changes the button size --
+        // line-height: $lh-medium; 
     }
 
     &__text {
-        font-family: $poppins;
         font-weight: $semibold;
         line-height: $lh-medium;
+        // Formular elements usually don't inherit default properties
         font-size: 16px;
     }
 }

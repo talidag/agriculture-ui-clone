@@ -1,12 +1,8 @@
 @import "./scss/foundation/reset.scss";
 
-.app {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width:100vw;
+// Button effects 
 
-    // To add or not to add, this is the question.
-    // max-width: 1920px;
-    
+button {
+    cursor: pointer;
+    transition: all .75s ease-in-out;
 }

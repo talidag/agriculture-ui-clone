@@ -6,7 +6,7 @@ import linkedin from "../../../assets/linkedin.svg";
 import clock from "../../../assets/clock.svg";
 import email from "../../../assets/email.svg";
 
-const Footer = () => {
+const Header = () => {
   return (
     <header className="header">
       <div className="left__content">
@@ -22,16 +22,16 @@ const Footer = () => {
       </div>
       <div className="right__content">
         <div className="item">
-          <img src={email} alt="email icon" className="icon" />
-          <p className="text">agriculture.999@gmail.com</p>
+          <img src={email} alt="email icon" />
+          <p className="item__text">agriculture.999@gmail.com</p>
         </div>
         <div className="item">
-          <img src={clock} alt="clock" className="icon" />
-          <p className="text">Mon - Sat 8:00 - 6:30, Sunday - CLOSED</p>
+          <img src={clock} alt="clock" />
+          <p className="item__text">Mon - Sat 8:00 - 6:30, Sunday - CLOSED</p>
         </div>
       </div>
     </header>
   );
 };
 
-export default Footer;
+export default Header;

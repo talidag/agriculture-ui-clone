@@ -1,24 +1,42 @@
 @import '../../../scss/foundation/variables';
 
+
+.cut__img {
+    position: absolute;
+    z-index: -1;
+    left: 10rem;
+    right: 0;
+    top: 1rem;
+}
+
 .nav {
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 137px;
     background: $white;
+    position: relative;
 
-}
+    &__logo {
+        cursor: pointer;
+    }
 
-.nav__elements {
-    display: flex;
-    gap: 48px;
-    color: $grey;
-    font-weight: $medium;
-    font-family: $poppins;
+    &__elements {
+        display: flex;
+        gap: 48px;
+        color: $grey;
+        font-weight: $medium;
+        font-family: $poppins;
+    }
 }
 
 .icons {
     display: flex;
     gap: 24px;
     align-items: center;
+}
+
+.icon__image {
+    cursor: pointer;
 }

@@ -6,12 +6,16 @@
     height: 36px;
     background: $light-grey;
     justify-content: space-between;
+    // different size between the elements compared to Figma
     width:100%;
     padding: 9px 135px;
+
+    font-family: $poppins;
+    font-weight: $regular;
+    color: $grey;
 }
 
-
-.left__content {
+.left__content, .right__content {
     display: flex;
     gap: 40px;
 }
@@ -21,30 +25,22 @@
     gap: 24px;
 }
 
-
-.welcome__text {
-    color: $grey;
-    font-family: $poppins;
-    font-weight: $regular;
-    line-height: $lh-small;
-    font-size: $fs-small;
+.brand {
+    cursor: pointer;
 }
 
-.right__content {
-    display: flex;
-    gap: 40px;
+.welcome__text {
+    line-height: $lh-small;
+    font-size: $fs-small;
 } 
 
 .item {
     display: flex;
     flex-direction: row;
-    gap:8px;
-}
+    gap: 8px;
+    
+    &__text {
+        font-size: $fs-small;
 
-.text {
-    font-family: $poppins;
-    font-weight: $regular;
-    color: $grey;
-    font-size: $fs-small;
+    }
 }
-

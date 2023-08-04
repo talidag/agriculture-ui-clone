@@ -1,5 +1,10 @@
 @import '../../../scss/foundation/_variables';
 
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .main {
     height: 84vh;
     background: url('../../../assets/main.jpg') no-repeat center center fixed; 
@@ -8,6 +13,8 @@
     -o-background-size: cover;
     background-size: cover;
     color:$white;
+    // should've put position relative here 
+    // instead of a different wrapper?
    
     &__text {
         display: flex;
@@ -15,7 +22,9 @@
         gap:48px;
         padding: 164px 136px;
         width: 758px; // padding 136 * 2 + 486px din Figma
+        position: relative;
     }
+    
 
     &__welcome {
         font-family: $poppins;
@@ -36,4 +45,19 @@
         font-weight: $medium;
         line-height: $lh-big;
     }
+}
+
+.yay {
+    position: absolute;
+    right: 6rem;
+    top: 13rem;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 8px;
+    right:135px;
+    top:312px;
 }

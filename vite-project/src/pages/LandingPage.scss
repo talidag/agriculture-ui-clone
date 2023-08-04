@@ -1,0 +1,10 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:100vw;
+
+    // To add or not to add max-width? This is the question 🤔
+    // max-width: 1920px;
+    
+}

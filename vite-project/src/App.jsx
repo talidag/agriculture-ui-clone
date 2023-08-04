@@ -11,6 +11,7 @@ function App() {
         <Navbar />
       </div>
       <Main />
+      <Header />
     </>
   );
 }
